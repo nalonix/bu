@@ -1,0 +1,106 @@
+#About{
+
+}
+
+.about--banner{
+    background: url("../assets/bg/bostonCity.jpg");
+    background-position:bottom;
+    background-size: cover;
+    height: 30%;
+    position: relative;
+}
+
+.about--body{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    align-items: center;
+}
+
+.about--body__midHeader{
+    margin: 1.7rem 0 0.7rem 0;
+    text-align: center;
+}
+
+.about--body__largeHeader{
+    width: 50%;
+    min-width: fit-content;
+    padding: 0;
+    text-align: center;
+    font-weight: normal;
+    border-bottom: solid var(--cardBlackColor) 2px;
+}
+
+
+
+
+#downArrow{
+    position: absolute;
+    bottom: -1.5rem;
+    left: 46.5%;
+}
+
+.about--body-columns{
+  flex: 1;
+  width: 100%;
+  max-width: 1200px;
+  column-count: 3;
+  padding: 1rem;
+}
+.about--body-columns span{
+    font-style: italic;
+    margin: 1rem 0;
+    display: block;
+}
+.about--body-colorCards{
+    display: flex;
+
+}
+
+.colorCards--card{
+    display: flex;
+    padding: 1.1rem;
+    flex: 1;
+}
+
+.colorCards--card:nth-child(1){
+    background: var(--brokenGreenColor);
+}
+.colorCards--card:nth-child(2){
+    background: var(--cardBlackColor);
+}
+.colorCards--card:nth-child(3){
+    background: var(--redHeadingColor);
+}
+
+
+.cardCards--card-pre{
+    margin: 0.2rem;
+    width: 70px;
+    display: flex;
+    align-items: start;
+}
+.colorCards--card-body{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+}
+@media screen and (max-width: 600px) {
+    .about--body-colorCards{
+        flex-direction: column;
+    }
+    .about--body-columns{
+        column-count: 1;
+    }
+    .about--body-columns p{
+        margin: 0.5rem 0;
+    }
+}
+
+
+@media screen and (max-width: 400px) {
+    .about--body-columns{
+        column-count: 1;
+    }
+}
