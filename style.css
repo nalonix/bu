@@ -27,6 +27,7 @@
     --cardBlackColor: #2E2E2E;
 }
 body{
+    width: 100%;
 
 }
 h1{
@@ -50,6 +51,7 @@ a{
 
 section{
     min-height: 100vh;
+    max-height: 720px;
     display: flex;
     flex-direction: column;
     overflow: hidden;
