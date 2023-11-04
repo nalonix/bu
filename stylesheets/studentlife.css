@@ -1,0 +1,87 @@
+#StudentLife{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0 0 0 1.5rem;
+}
+
+.studentlife--gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    width: 50%;
+    overflow: hidden;
+}
+
+.studentlife--gallery img{
+    overflow: hidden;
+    max-height: 230px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.studentlife--gallery .gallery--cols{
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+.gallery--cols img{
+    width: 50%;
+    object-fit: cover;
+}
+
+.studentlife--article{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.6rem;
+
+    width: 50%;
+    padding: 0 1.5rem 0 1.5rem ;
+
+    overflow: hidden;
+}
+
+.article--cols{
+    column-count: 2;
+}
+
+.article--cols P{
+    padding-block: 1rem 0;
+}
+@media screen and (max-width: 780px) {
+    #StudentLife{
+        flex-direction: column;
+        padding: 0;
+    }
+    .hideOnSmall{
+        display: none;
+    }
+    .studentlife--gallery img{
+        max-height: 170px;
+    }
+    .studentlife--gallery {
+        width: 100%;
+    }
+    .studentlife--article{
+        width: 100%;
+        display: block;
+        padding-block: 2rem;
+    }
+
+
+}
+
+@media screen and (max-width: 450px) {
+    .studentlife--article .article--cols{
+        column-count: 1;
+        margin: 1rem 0;
+    }
+}

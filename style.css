@@ -1,8 +1,10 @@
 
 @import "stylesheets/header.css";
 @import "stylesheets/about.css";
+@import "stylesheets/studentlife.css";
+@import "stylesheets/visit.css";
+@import "stylesheets/tuition.css";
 
-@import url("https://db.onlinewebfonts.com/c/14bcfd7986d2631f04b55ff9a0cf1837?family=VeneerClean-Soft");
 
 *{
     padding: 0;
@@ -12,7 +14,8 @@
     transition-duration: 500ms;
     scroll-behavior: smooth;
 
-    font-family: Helvetica;
+    font-family: 'Lato', sans-serif;
+
 }
 
 
@@ -28,35 +31,47 @@ body{
 }
 h1{
     font-size: 5rem;
-    font-family: "VeneerClean-Soft";
+    font-family: 'Bebas Neue', sans-serif;
 
 }
 h2{
     font-size: 2.5rem;
-    font-family: "VeneerClean-Soft";
+    font-family: 'Bebas Neue', sans-serif;
 }
 h3{
     font-size: 2rem;
-    font-family: "VeneerClean-Soft";
+    font-family: 'Bebas Neue', sans-serif;
 }
 a{
     text-decoration: none;
     color: gray;
-    display: flex;
+
 }
 
 section{
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
+    overflow: hidden;
 }
 
 .redHeading{
     color: var(--redHeadingColor);
-    font-family: Helvetica;
-
+    font-family: 'Lato', sans-serif;
+    font-weight: lighter;
 }
-
+.redBold{
+    color: var(--redHeadingColor);
+    font-size: x-large;
+    font-weight: lighter;
+}
+.redBoldHeading{
+    color: var(--redHeadingColor);
+    font-weight: 400;
+}
+.sectionHeading{
+    font-size: 3.7rem;
+}
 #downArrow{
     width: 3rem;
 }
@@ -70,6 +85,9 @@ h1{
     h3{
         font-size: 1.5rem;
     }
+    .sectionHeading{
+        font-size: 3.3rem;
+    }
 }
 
 @media screen and (max-width: 400px) {
@@ -81,5 +99,8 @@ h1{
     }
     h3{
         font-size: 1rem;
+    }
+    .sectionHeading{
+        font-size: 3rem;
     }
 }

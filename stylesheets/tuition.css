@@ -1,0 +1,87 @@
+#Tuition{
+
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.tuition-article{
+    display: flex;
+    flex-direction: row;
+   transform: translateY(-7rem);
+
+    flex: 1;
+
+    max-width: 1100px;
+    width: 90%;
+
+
+    background: white;
+
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+}
+.tuition-article .left{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    padding: 5rem 0.7rem 1.5rem 1rem;
+    max-width: 50%;
+}
+.tuition-article .right{
+
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    padding: 7rem 0.7rem 1.5rem 1rem;
+    max-width: 50%;
+}
+
+.tuition-article > .right > div{
+    margin: 0.6rem 0;
+}
+.deadlines .deadlines--cols{
+    display: flex;
+    flex-direction: row;
+}
+.deadlines--cols div{
+    width: 50%;
+    padding: 0.8rem 1rem 0 0;
+}
+.tuition--banner{
+    width: 100%;
+    height: 300px;
+    background: url("../assets/bg/tuitionBanner.jpg") -10px;
+    background-size: cover;
+}
+
+@media screen and (max-width: 800px) {
+    .tuition-article{
+      flex-direction: column;
+  }
+    .tuition-article .left{
+        max-width: 100%;
+    }
+    .tuition-article .right{
+        max-width: 100%;
+        padding: 2rem 0.7rem 1.5rem 1rem;
+    }
+
+}
+
+@media screen and (max-width: 430px) {
+    .tuition-article{
+        width: 95%;
+    }
+    .deadlines .deadlines--cols {
+        flex-direction: column;
+    }
+    .deadlines--cols div{
+        width: 100%;
+    }
+}

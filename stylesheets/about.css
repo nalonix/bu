@@ -3,10 +3,10 @@
 }
 
 .about--banner{
-    background: url("../assets/bg/bostonCity.jpg");
-    background-position:bottom;
+    background: url("../assets/bg/bostonCity.jpg") -10px;
     background-size: cover;
-    height: 30%;
+    height: 40%;
+    min-height: 200px;
     position: relative;
 }
 
@@ -46,6 +46,9 @@
   max-width: 1200px;
   column-count: 3;
   padding: 1rem;
+}
+.about--body-columns p{
+    line-height: 1.6rem;
 }
 .about--body-columns span{
     font-style: italic;
