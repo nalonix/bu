@@ -10,6 +10,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
 
     <title>Boston Brochure</title>
+    <script>
+        function showSmallMenu(){
+             let mobile_menu = document.getElementById("mobile-menu");
+             if(mobile_menu.style.display === "flex"){
+                 mobile_menu.style.display = "none";
+             }else{
+                 mobile_menu.style.display = "flex";
+             }
+        }
+    </script>
 </head>
 <body>
 <header>
@@ -33,7 +43,7 @@
                 <a href="#Programs">Programs</a>
             </li>
         </ul>
-        <ul class="nav--small">
+        <ul class="nav--small" onclick="showSmallMenu()">
             <li>
                 <a href="#">
                     <img src="./assets/logo/bulogo_red.png" alt="" class="nav__logo">
@@ -44,6 +54,20 @@
             </li>
         </ul>
     </nav>
+    <ul class="nav--menu__small" id="mobile-menu">
+        <li>
+            <a href="#About">About</a>
+        </li>
+        <li>
+            <a href="#StudentLife">Student Life</a>
+        </li>
+        <li>
+            <a href="#Tuition">Tuition</a>
+        </li>
+        <li>
+            <a href="#Programs">Programs</a>
+        </li>
+    </ul>
     <div class="header__hero">
         <h1>
             IT'S NOT JUST
@@ -211,7 +235,24 @@
                 <h3 class="redBold">
                     EXPENSES FOR THE 2018/2019 ACADEMIC YEAR*
                 </h3>
-                <table></table>
+                <table>
+                    <tr>
+                        <td class="left-align">Tuition</td>
+                        <td class="right-align">$10,000</td>
+                    </tr>
+                    <tr>
+                        <td class="left-align">Fees</td>
+                        <td class="right-align">$2,000</td>
+                    </tr>
+                    <tr>
+                        <td class="left-align">Board</td>
+                        <td class="right-align">$5,000</td>
+                    </tr>
+                    <tr class="bold">
+                        <td class="left-align">Total</td>
+                        <td class="right-align">$17,000</td>
+                    </tr>
+                </table>
             </div>
             <div class="deadlines">
                 <h2>

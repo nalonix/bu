@@ -20,6 +20,7 @@ nav{
     top: 0;
     padding: 0.4rem;
     backdrop-filter: blur(20px);
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 nav ul{
@@ -52,6 +53,9 @@ nav a{
 .nav--small{
     display: none;
 }
+#mobile-menu{
+    display: none;
+}
 
 .hero__logo{
     width: 8rem;
@@ -70,9 +74,43 @@ nav a{
     line-height: 100%;
     font-weight: lighter;
 }
+
 @media screen and (max-width: 830px) {
     .nav--small{
         display: flex;
+    }
+    .nav--menu__small{
+        backdrop-filter: blur(20px);
+        background-color: rgba(0, 0, 0, 0.43);
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+        border-radius: 2px;
+
+        position: fixed;
+        top: 12%;
+        right: 6%;
+        z-index: 1000;
+
+        display: flex;
+        flex-direction: column;
+        padding: 0.7rem;
+
+        width: 80%;
+        min-width: 200px;
+        max-width: 300px;
+
+    }
+
+    .nav--menu__small li{
+        list-style: none;
+    }
+    .nav--menu__small a{
+        padding: 1rem;
+        margin: 0.2rem 0;
+        display: block;
+        color: whitesmoke;
+    }
+    .nav--menu__small a:active:focus{
+        background: rgba(255, 255, 255, 0.34);
     }
     .nav--main{
         display: none;

@@ -60,6 +60,40 @@
     background-size: cover;
 }
 
+
+table {
+    border-collapse: collapse;
+    width: 95%;
+}
+
+tr {
+    border-bottom: 1px solid #000;
+}
+
+td {
+    padding: 5px 0;
+}
+
+.left-align {
+    text-align: left;
+}
+
+.right-align {
+    text-align: right;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+/* Remove border from the last row */
+tr:last-child {
+    border: none;
+}
+
+
+
+
 @media screen and (max-width: 800px) {
     .tuition-article{
       flex-direction: column;
