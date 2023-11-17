@@ -4,6 +4,7 @@
 @import "stylesheets/studentlife.css";
 @import "stylesheets/visit.css";
 @import "stylesheets/tuition.css";
+@import "stylesheets/programs.css";
 
 
 *{
@@ -43,6 +44,9 @@ h3{
     font-size: 2rem;
     font-family: 'Bebas Neue', sans-serif;
 }
+p{
+    line-height: 1.4rem;
+}
 a{
     text-decoration: none;
     color: gray;
@@ -69,6 +73,7 @@ section{
 .redBoldHeading{
     color: var(--redHeadingColor);
     font-weight: 400;
+    margin: 1rem 0;
 }
 .sectionHeading{
     font-size: 3.7rem;

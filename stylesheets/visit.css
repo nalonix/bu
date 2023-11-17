@@ -4,14 +4,24 @@
     min-height: 250px;
     background: url("../assets/bg/visitBg.jpg");
     background-size: cover;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.visit--banner h1{
+    color: white;
+    font-size: 8rem;
+    font-weight: lighter;
+}
+.visit--banner h1 svg{
+    width: 6rem;
 }
 .article{
     display: flex;
     flex-direction: row;
     flex-grow: 1;
 }
-
-
 
 .center{
     flex: 1;
@@ -32,7 +42,17 @@
     width: 20px;
 }
 .virtualTour{
-
+    display: flex;
+    justify-content: center;
+}
+.eyeIcon{
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.eyeIcon svg{
+    font-size: 1.5rem;
 }
 .left{
     overflow: hidden;
@@ -76,4 +96,22 @@
         gap: 10px;
     }
 
+}
+
+@media screen and (max-width: 600px) {
+    .visit--banner h1{
+        font-size: 6rem;
+    }
+    .visit--banner h1 svg{
+        width: 4rem;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .visit--banner h1{
+        font-size: 4rem;
+    }
+    .visit--banner h1 svg{
+        width: 2rem;
+    }
 }
